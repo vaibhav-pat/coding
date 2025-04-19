@@ -10,7 +10,7 @@ void insert(vector<int> &v, int val){
     v.pop_back();//H
     insert(v,val);//H
     v.push_back(rem);// Induction
-    return;
+    //return;optional
 }
 void sort(vector<int> &v){
     if(v.size() == 1) return; // BC
@@ -18,7 +18,7 @@ void sort(vector<int> &v){
     v.pop_back();//Hypothesis
     sort(v);//Hypothesis
     insert(v,back);//Induction
-    return;
+    //return;optional
 }
 void print(vector<int> v ){
     if(v.size() == 0)return;//BC
@@ -26,7 +26,7 @@ void print(vector<int> v ){
     v.pop_back();//H
     print(v);//H
     cout<<temp<<" ";//Induction
-    return;
+    //return;optional
 }
 int main(){
     int n ;
